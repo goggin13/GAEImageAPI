@@ -1,0 +1,4 @@
+These files offer an API over the GAE Blobstore and datastore
+for saving and retrieving themed images (width x height).  
+
+see /API for details.  

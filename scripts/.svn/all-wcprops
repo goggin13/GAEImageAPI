@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/artmkt/!svn/ver/154/GAEImageAPI/scripts
+END
+functions.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/artmkt/!svn/ver/146/GAEImageAPI/scripts/functions.py
+END
+server.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/artmkt/!svn/ver/173/GAEImageAPI/scripts/server.pyc
+END
+api.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/artmkt/!svn/ver/154/GAEImageAPI/scripts/api.py
+END
+uploader.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/artmkt/!svn/ver/153/GAEImageAPI/scripts/uploader.py
+END
+functions.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/artmkt/!svn/ver/146/GAEImageAPI/scripts/functions.pyc
+END
+api.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/artmkt/!svn/ver/173/GAEImageAPI/scripts/api.pyc
+END
+uploader.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/artmkt/!svn/ver/173/GAEImageAPI/scripts/uploader.pyc
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/artmkt/!svn/ver/146/GAEImageAPI/scripts/models.py
+END
+main.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/artmkt/!svn/ver/154/GAEImageAPI/scripts/main.py
+END
+models.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/artmkt/!svn/ver/146/GAEImageAPI/scripts/models.pyc
+END
+server.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/artmkt/!svn/ver/149/GAEImageAPI/scripts/server.py
+END

@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<body>
+
+<table>
+	<tr><th>label</th><th>width</th><th>height</th><th>link</th></tr>
+{% for t in themes %}
+	<tr>
+		<td>{{t.label}}</td>
+		<td>{{t.width}}</td>
+		<td>{{t.height}}</td>
+		<td>
+			<a href='/update_theme?label={{t.label}}&width={{t.width}}&height={{t.height}}'>
+			edit
+			</a>
+		</td>
+	</tr>
+{% endfor %}
+</table>
+	
+</body>
+</html>
