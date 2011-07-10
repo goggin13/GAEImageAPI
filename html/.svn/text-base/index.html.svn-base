@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script> 
+<script type="text/javascript" src="postmessage.js"></script> 
+
+<script type="text/javascript"> 
+
+var send = function (msg) {
+	pm({
+		target: window.parent,
+		type: 'status', 
+		data:{status:msg}, 
+	});
+};
+
+$(document).ready(function () {
+	var submit = $('#gae_image_submit'),
+		file = $('#gae_image_file');
+	$('#gae_image_file').change(function () {
+		submit.click();
+	});
+	
+	submit.click(function () {
+		if (file.val().length === 0) {
+			return false;
+		}
+		send('loading');
+	});
+	
+});
+
+{% if url %}
+	send('{{url}}');
+{% else %}
+	send('init');
+{% endif %}
+
+</script> 
+<style type="text/css">
+.err {
+background:none repeat scroll 0 0 #494949;
+border:medium solid orange;
+color:orange;
+padding:5px;
+width:90%;
+}
+.msg {
+background:none repeat scroll 0 0 #CBCBCB;
+border:medium solid black;
+color:white;
+padding:5px;
+width:90%;
+}
+.hidden{
+	display: none;
+}
+</style>
+
+</head>
+
+<body>
+	{% if url %}
+		<span id='gaeimage_url' class='hidden'>{{url}}</span>
+	{% endif %}
+	{% if msg %}
+		<p class='{{msg_class}}'>{{msg}}</p>
+	{% endif %}
+	<p>Choose a photo to upload, and then press submit</p>
+	<form action='{{upload_url}}' id='image_form' method="POST" enctype="multipart/form-data">
+		<input id="gae_image_file" type="file" name="file"><br> 
+		<input id="gae_image_submit" type="submit" name="submit" value="Submit"> 
+	</form>
+</body>
+</html>
